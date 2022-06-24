@@ -99,9 +99,18 @@ header {
   line-height: 20px;
 }
 
-.top_center li img[alt="cart"] {
-  width: 25px;
-  height: 20px;
+.top_center .cart img[alt="cart"] {
+  width: 18px;
+  height: 12px;
+}
+
+.cart a::after {
+  content: "0";
+  background-color: red;
+  color: #fff;
+  border-radius: 15px;
+  font-weight: 900;
+  padding: 0 5px;
 }
 
 .top_off li {
@@ -147,6 +156,10 @@ header {
 
 .header_search li a {
   color: #000;
+}
+
+.search_page2 {
+  display: none;
 }
 
 .header_search input {

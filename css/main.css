@@ -62,7 +62,7 @@ main {
 #sub_slider .book_cast {
   position: absolute;
   top: 0;
-  left: 13px;
+  left: 12px;
   width: 205px;
   background-color: #fff;
   z-index: 2;
@@ -97,7 +97,7 @@ main {
   height: 50px;
   position: absolute;
   top: 160px;
-  left: 13px;
+  left: 12px;
   background-color: #fff;
 }
 
@@ -212,7 +212,7 @@ section {
 #side_nav_left {
   width: 85px;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: -105px;
 }
 
@@ -226,43 +226,41 @@ section {
   margin:0 auto;
   position: relative;
   display: flex;
+  margin-top: 50px;
 }
 
 .today_slide {
   width: 634px;
   padding-right: 15px;
-  background-color: teal;
 }
 
-.today_slide .today_title {
+.today_slide .title {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
 }
 
-.today_title ul {
+.title ul {
   display: flex;
   align-items: center;
 }
 
-.today_title li {
+.title li {
   float: left;
   line-height: 15px;
   padding-right: 20px;
-  background-color: yellow;
 }
 
-.today_title li h3 {
+.title li h3 {
   font-size: 16px;
 }
 
-.today_title li a {
+.title li a {
   font-size: 14px;
 }
 
-.today_title img {
+.title img {
   padding: 5px;
   border: 1px solid #666;
   margin-right: 10px;
@@ -273,7 +271,6 @@ section {
   height: 318px;
   border: 1px solid #8885a0;
   position: relative;
-  background-color: thistle;
 }
 
 .welcome_position {
@@ -326,7 +323,6 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: salmon;
 }
 
 .welcome_box img {
@@ -357,12 +353,313 @@ section {
 
 .today_ad {
   width: 302px;
-  background-color: yellow;
+  padding-top: 48px;
 }
 
 .today_ad_box {
-  width: 100%;
   border: 1px solid #dadada;
+}
+
+.today_ad_box img {
+  width: 100%;
+  height: 210px;
+}
+
+.today_ad_box:last-child {
+  height: 106px;
+  margin-top: -5px;
+}
+
+.today_ad_box:last-child img {
+  height: 100%;
+}
+
+.new_book {
+  width: 950px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: springgreen;
+}
+
+.new_book .title {
+  width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new_book_country {
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newbook_box {
+  width: 221px;
+  height: 300px;
+  border: 1px solid #dadada;
+}
+
+.sample {
+  width: 950px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: rgb(167, 167, 194);
+}
+
+.sample .title {
+  width: 950px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sample .title li span {
+  font-size: 16px;
+  color: #2AC557;
+  display: flex;
+  align-items: center;
+}
+
+.sample .title li a {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.sample .title img[alt="question"] {
+  border: none;
+}
+
+.sample_product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sensitive_box {
+  width: 221px;
+  height: 300px;
+  border: 1px solid #dadada;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.sensitive_box ul {
+  width: 169px;
+  padding-top: 10px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.sensitive_box li {
+  padding-top: 5px;
+}
+
+.sensitive_box li a {
+  font-size: 12px;
+}
+.sample_box {
+  width: 221px;
+  height: 300px;
+  border: 1px solid #dadada;
+}
+
+.this_book {
+  width: 950px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  background-color: rosybrown;
+}
+
+.this_book h3 {
+  width: 100%;
+  font-size: 16px;
+}
+
+.this_list {
+  width: 221px;
+  height: 325px;
+  border: 1px solid #dadada;
+  background-position: center;
+  background-size: cover;
+}
+
+.this_bookbox_on, .this_bookbox {
+  width: 221px;
+  height: 325px;
+  border: 1px solid #dadada;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.this_bookbox_on img, .this_bookbox img {
+  width: 200px;
+  height: 150px;
+  background-size: contain;
+}
+
+.this_bookbox {
+  display: none;
+}
+
+.this_tag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+
+.this_tag li {
+  float: left;
+}
+
+.key_word {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.key_word h4 {
+  padding-left: 20px;
+  font-weight: 900;
+}
+
+.key_word .stick {
+  width: 1px;
+  height: 35px;
+  margin: 0 5px 0 15px;
+  background-color: #999;
+}
+
+.key_word li {
+  float: left;
+  padding: 0 2px;
+}
+
+.key_word li a {
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 15px;
+  border: 1px solid #dadada;
+  background-color: #fff;
+}
+
+.only_gyobo {
+  width: 950px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.only_icon {
+  width: 128px;
+  height: 109px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.only_icon img {
+  width: 65px;
+  height: 41px;
+}
+
+.only_icon_box {
+  width: 802px;
+  height: 109px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
+.only_icon_box ul {
+  width: 648px;
+  position: absolute;
+  top: 10px;
+  left: 72px;
+  background-color: yellow;
+}
+
+.only_icon_box li {
+  float: left;
+}
+
+.only_icon_box li img {
+  width: 108px;
+  height: 87px;
+}
+
+.only_icon_box .only_prev {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.only_icon_box .only_next {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.center_wrap {
+  width: 100%;
+  background-color: rgb(188, 9, 9);
+}
+
+.center_slide {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: rgb(243, 243, 243);;
+}
+
+.center_slide img[alt="hot_zone"] {
+  width: 133px;
+  height: 115px;
+}
+
+.center_slide li {
+  width: 817px;
+  height: 290px;
+  background-color: yellowgreen;
+}
+
+.center_slide li img {
+  width: 100%;
+  height: 100%;
+}
+
+.center_slide li:not(:first-child) {
+  display: none;
+}
+
+.center_slide .center_left {
+  position: absolute;
+  top: 50%;
+  left: 133px;
+}
+
+.center_slide .center_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
 .notice {

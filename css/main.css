@@ -2,11 +2,11 @@
 
 main {
   width: 100%;
-  background-color: violet;
 }
 
 #slider {
   width: 100%;
+  background-color: #fbeaef;
 }
 
 #slider_wrap {
@@ -15,14 +15,25 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 25px 0;
-  background-color: tomato;
 }
 
 #main_slider {
   width: 700px;
   height: 370px;
   position: relative;
-  background-color: sienna;
+}
+
+.slider_one {
+  width: 700px;
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.slider_one img{
+  width: 232px;
+  height: 300px;
 }
 
 #main_slider ul {
@@ -34,11 +45,16 @@ main {
 
 #main_slider li {
   float: left;
-  width: 97.7px;
+  width: 98.8px;
   text-align: center;
   padding: 10px 0px;
-  border: 1px solid #eee;
+  border: 1px solid #d7d7d7;
+  border-left: none;
   background-color: #fff;
+}
+
+#main_slider li:first-child {
+  border-left: 1px solid #d7d7d7;
 }
 
 #main_slider li a {
@@ -50,20 +66,23 @@ main {
 #sub_slider {
   width: 230px;
   height: 370px;
-  background-color: turquoise;
   text-align: center;
   font-size: 12px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   position: relative;
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
 }
+
 
 #sub_slider .book_cast {
   position: absolute;
   top: 0;
   left: 12px;
   width: 206px;
+  padding-top: 20px;
   background-color: #fff;
   z-index: 2;
 }
@@ -122,7 +141,7 @@ main {
 
 #sub_slider ul {
   padding-top: 15px;
-  border-top: 1px solid #666;
+  border-top: 1px solid #dadada;
   text-align: left;
   position: absolute;
   top: 230px;
@@ -145,7 +164,7 @@ main {
 #slider_ad_top {
   width: 100%;
   background-color: #f9f9f9;
-  border-bottom: #eee;
+  border-bottom: #dadada;
 }
 
 .sub_ad_wrap {
@@ -177,7 +196,6 @@ main {
 
 #slider_ad_btm {
   width: 100%;
-  background-color: #fff;
   border-bottom: 1px solid #eee;
 }
 
@@ -185,7 +203,6 @@ main {
   width: 950px;
   margin: 0 auto;
   display: flex;
-  background-color: #fff;
 }
 
 .sub_ad2 {
@@ -217,7 +234,6 @@ section {
 }
 
 .left_navbox {
-  background-color: #fff;
   border: 1px solid #dadada;
 }
 
@@ -378,7 +394,6 @@ section {
   width: 950px;
   margin: 0 auto;
   margin-top: 50px;
-  background-color: springgreen;
 }
 
 .new_book .title {
@@ -403,24 +418,40 @@ section {
   border: 1px solid #dadada;
 }
 
+.newbook_box:hover {
+  border: 1px solid #5e6b9e;
+  transition: all 0.5s ease;
+}
+
 .newbook_box img {
-  padding-top: 25px;
+  margin-top: 35px;
+  border: 1px solid #888;
 }
 
 .newbook_box h3 {
-  margin-top: 0;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0 19px;
 }
 
-.newbook_box h3:last-child {
-  margin-top: -15px;
+.newbook_box h3 a {
+  color: #5e6b9e;
+  font-size: 12px;
+}
+
+.newbook_box h4 {
+  width: 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.new_book h4 a {
+  font-size: 12px;
 }
 
 .sample {
   width: 950px;
   margin: 0 auto;
   margin-top: 50px;
-  background-color: rgb(167, 167, 194);
 }
 
 .sample .title {
@@ -489,13 +520,10 @@ section {
   transition: all 0.5s ease;
 }
 
-.sample_box:hover > .sample_img {
-  display: block;
-  transition: all 0.5s ease;
-}
 
 .sample_box img {
-  padding-top: 35px;
+  margin-top: 35px;
+  border: 1px solid #888;
 }
 
 .sample_box h3 {
@@ -538,7 +566,7 @@ section {
 }
 
 .sample_img img {
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: 2px;
   padding: 0;
   border: 1px solid #fff;
@@ -547,8 +575,8 @@ section {
 }
 
 .sample_img img:hover {
-  background-color: #465075;
   transition: all 0.5s ease;
+  background-color: #273050;
 }
 
 .key_word {
@@ -559,18 +587,20 @@ section {
   background-color: #f3f3f3;
   margin-top: 20px;
   font-size: 12px;
+  padding: 5px 0;
 }
 
 .key_word h4 {
   padding-left: 20px;
   font-weight: 900;
+  color: #000;
 }
 
 .key_word .stick {
   width: 1px;
   height: 35px;
-  margin: 0 5px 0 15px;
-  background-color: #999;
+  margin: 0 15px 0 15px;
+  background-color: rgb(201, 195, 195);
 }
 
 .key_word li {
@@ -584,6 +614,7 @@ section {
   border-radius: 15px;
   border: 1px solid #dadada;
   background-color: #fff;
+  font-size: 12px;
 }
 
 .only_gyobo {
@@ -623,7 +654,6 @@ section {
   position: absolute;
   top: 10px;
   left: 72px;
-  background-color: yellow;
 }
 
 .only_icon_box li {
@@ -660,7 +690,6 @@ section {
   overflow: hidden;
   position: relative;
   display: flex;
-  background-color: rgb(243, 243, 243);;
 }
 
 .center_slide img[alt="hot_zone"] {
@@ -668,33 +697,69 @@ section {
   height: 115px;
 }
 
+.center_window {
+  width: 817px;
+  height: 310px;
+  overflow: hidden;
+  position: relative;
+}
+
+.center_slide ul {
+  width: 5000px;
+  position: absolute;
+  top: 0;
+  left: -830px;
+}
+
 .center_slide li {
   width: 817px;
-  height: 290px;
-  background-color: yellowgreen;
+  height: 310px;
+  float: left;
 }
 
 .center_slide li img {
   width: 100%;
-  height: 100%;
-}
-
-.center_slide li:not(:first-child) {
-  display: none;
+  height: 93%;
 }
 
 .center_slide .center_left {
   position: absolute;
   top: 50%;
   left: 133px;
+  display: none;
+  cursor: pointer;
 }
 
 .center_slide .center_right {
   position: absolute;
   top: 50%;
   right: 0;
+  display: none;
+  cursor: pointer;
 }
 
+.dot {
+  position: absolute;
+  bottom: 20px;
+  left: 450px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dot_icon {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid rgb(196, 196, 196);
+}
+
+.active, .dot_icon:hover {
+  background-color: #7283c7;
+}
 
 .this_book {
   width: 950px;
@@ -703,12 +768,12 @@ section {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  background-color: rosybrown;
 }
 
 .this_book h3 {
   width: 100%;
   font-size: 16px;
+  padding: 10px 0 20px;
 }
 
 .this_list {
@@ -794,7 +859,6 @@ section {
   width: 950px;
   margin: 0 auto;
   padding-bottom: 50px;
-  background-color: wheat;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -805,7 +869,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: turquoise;
 }
 
 .title_k a {
@@ -824,7 +887,6 @@ section {
   border-radius: 70%;
   padding: 5px;
   margin: 20px 5px;
-  background-color: tomato;
   position: relative;
   overflow: hidden;
 }
@@ -838,16 +900,21 @@ section {
   transform: scale(1.0);
 }
 
+.k_box img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
 .k_box p {
   position: absolute;
   top: 115px;
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: #000;
   text-align: center;
   opacity: 0.6;
   padding-top: 10px;
+  background-color: #000;
 }
 
 .k_box p a {
@@ -860,14 +927,12 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: yellowgreen;
 }
 
 .k_sub {
   width: 180px;
   padding: 0 10px;
   text-align: center;
-  background-color: yellow;
 }
 
 .k_sub a {
@@ -880,7 +945,6 @@ section {
 }
 
 .k_sub p a {
-  background-color: thistle;
   color: #666;
   font-weight: 500;
 }
@@ -899,7 +963,6 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background-color: yellow;
 }
 
 .best_seller .title {
@@ -921,7 +984,14 @@ section {
 .best_box {
   width: 128px;
   height: 240px;
+  position: relative;
   background-color: tomato;
+}
+
+.best_box .label {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .best_ad {
@@ -992,13 +1062,55 @@ section {
   margin: 100px 0 30px;
 }
 
+.book_week {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.book_week .title {
+  width: 100%;
+}
+
+.book_week .title h3 {
+  font-size: 16px;
+}
+
+.week_box {
+  width: 150px;
+  height: 330px;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.week_img {
+  width: 150px;
+  height: 190px;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.week_box h3 {
+  width: 150px;
+  height: 50px;
+  margin: -10px 0 0 0;
+}
+
 .klover {
   width: 950px;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background-color: rebeccapurple;
+}
+
+.klover span {
+  font-size: 11px;
+  color: #3e74ab;
 }
 
 .klover .title {
@@ -1008,41 +1120,128 @@ section {
   justify-content: space-between;
 }
 
+.klover .title h3 {
+  font-size: 16px;
+}
+
 .klover_find {
-  width: 220px;
+  width: 210px;
   height: 410px;
-  background-color: blue;
+  position: relative;
+  border: 5px solid #e3e3e4;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column wrap;
+}
+
+.klover_find h3 {
+  font-size: 12px;
+  font-weight: 900;
+  color: #000;
+  margin: 0;
+}
+
+.klover_find h4 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.klover_find h5 {
+  font-size: 12px;
+  width: 145px;
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+.klover_find img {
+  width: 126px;
+  height: 196.44px;
+  border: 1px solid #f9f9f9;
+}
+
+.klover_find img:hover {
+  border: 1px solid #000;
+  transition: all 0.5s ease;
+}
+
+.kscore {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.kscore img {
+  width: 50px;
+  height: 47px;
+}
+
+.kscore span {
+  color: #000;
+  font-size: 12px;
+  font-weight: 900;
 }
 
 .klover_chu {
-  width: 704px;
-  height: 410px;
-  background-color: pink;
-}
-
-.book_week {
-  width: 950px;
-  margin: 0 auto;
+  width: 702px;
+  height: 420px;
+  border: 1px solid #dadada;
   display: flex;
-  flex-flow: row wrap;
+  align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
-  background-color: #2AC557;
+  
 }
 
-.book_week .title {
-  width: 100%;
+.klover_book {
+  width: 170px;
+  height: 409px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  position: relative;
 }
 
-.week_box {
-  width: 150px;
-  height: 270px;
-  background-color: tomato;
+.klover_img {
+  width: 127px;
+  height: 184.44px;
 }
 
-.week_img {
-  width: 150px;
-  height: 190px;
+.klover_img img {
+  border: 1px solid #fff;
+}
+
+.klover_img img:hover {
+  border: 1px solid #000;
+  transition: all 0.5s ease;
+}
+
+.klover_score {
+  width: 170px;
+  height: 50px;
+  text-align: center;
+}
+
+.klover_score h3, .klover_score h4 {
+  margin: 0;
+}
+
+.klover_score h3 a {
+  font-size: 12px;
+}
+
+.klover_score h4 a {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .sentimental {
@@ -1051,22 +1250,27 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background-color: steelblue;
   padding: 50px 0;
+  text-align: center;
 }
 
 .sentimental .title {
   width: 100%;
 }
 
+.sentimental .title h3 {
+  font-size: 16px;
+  text-align: left;
+}
+
 .maker_box {
   width: 219px;
   height: 270px;
-  background-color: yellow;
 }
 
 .maker_box h1 {
   font-size: 14px;
+  color: #000;
 }
 
 .maker_box p {
@@ -1085,16 +1289,20 @@ section {
   height: 100%;
 }
 
-.make_img h1 {
+.make_img .sen_w {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 50px;
   background-color: #fff;
-  opacity: 0.9;
-  text-align: center;
-  padding-top: 20px;
+  opacity: 0.8;
+  width: 100%;
+  height: 60px;
+}
+
+.make_img h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
 }
 
 .notice {

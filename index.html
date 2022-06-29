@@ -119,7 +119,9 @@
         <div id="slider_wrap">
           <div id="main_slider">
             <div class="slider_one">
-
+              <img src="img/hanjeong_1.jpg" alt="limited">
+              <img src="img/hanjeong_2.jpg" alt="limited">
+              <img src="img/hanjeong_3.jpg" alt="limited">
             </div>
             <div class="slider_two">
 
@@ -391,15 +393,24 @@
             <img src="img/only_next.png" alt="next" class="only_next">
           </div>
         </div>
+        <!--라이징스타 지금 뜨는 HOT템-->
         <div class="center_wrap">
           <div class="center_slide">
             <img src="img/title_hot_zone.gif" alt="hot_zone">
-            <ul>
-              <li><a href="#"><img src="img/center_slide1.jpg" alt="center"></a></li>
-              <li><a href="#"><img src="img/center_slide2.jpg" alt="center"></a></li>
-              <li><a href="#"><img src="img/center_slide3.jpg" alt="center"></a></li>
-              <li><a href="#"><img src="img/center_slide4.jpg" alt="center"></a></li>
-            </ul>
+            <div class="center_window">
+              <ul>
+                <li class="center_album"><a href="#"><img src="img/center_slide4.jpg" alt="center"></a></li>
+                <li class="center_album"><a href="#"><img src="img/center_slide1.jpg" alt="center"></a></li>
+                <li class="center_album"><a href="#"><img src="img/center_slide2.jpg" alt="center"></a></li>
+                <li class="center_album"><a href="#"><img src="img/center_slide3.jpg" alt="center"></a></li>
+              </ul>
+            </div>
+            <div class="dot">
+              <span class="dot_icon"></span>
+              <span class="dot_icon"></span>
+              <span class="dot_icon"></span>
+              <span class="dot_icon"></span>
+            </div>
             <img src="img/center_left_btn.png" alt="center_left" class="center_left">
             <img src="img/center_right_btn.png" alt="center_right" class="center_right">
           </div>
@@ -564,34 +575,38 @@
             </div>
             <div class="best_corner">
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img">
+                  <img src="img/label1.png" alt="label" class="label">
+                </div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img">
+                  <img src="img/label2.png" alt="label" class="label">
+                </div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
               <div class="best_box">
-                <div class="best_cover"></div>
+                <div class="best_cover_img"></div>
               </div>
             </div>
             <div class="best_ad">
@@ -617,14 +632,6 @@
             </div>
           </div>
         </div>
-        <div class="klover">
-          <div class="title">
-            <h3>Klover 평점 졸은책</h3>
-            <img src="img/today_plus.gif" alt="plus">
-          </div>
-          <div class="klover_find"></div>
-          <div class="klover_chu"></div>
-        </div>
         <div class="book_week">
           <div class="title">
             <h3>이주의 책</h3>
@@ -648,6 +655,47 @@
             <div class="week_img"></div>
           </div>
         </div>
+        <div class="klover">
+          <div class="title">
+            <h3>Klover 평점 졸은책</h3>
+            <img src="img/today_plus.gif" alt="plus">
+          </div>
+          <div class="klover_find">
+            <h5>오늘의 발견</h5>
+            <div class="find_img">
+              <img src="img/klover_book.jpg" alt="find">
+            </div>
+            <span>[인문]</span>
+            <h3>메멘토 모리(이어령 대화록 1)</h3>
+            <h4>이어령</h4>
+            <div class="kscore">
+              <img src="img/klover.png" alt="klover">
+              <span>9.8</span>
+            </div>
+          </div>
+          <div class="klover_chu">
+            <div class="klover_book">
+              <div class="klover_img"></div>
+              <span class="kindex">[가정/육아]</span>
+              <div class="klover_score"></div>
+            </div>
+            <div class="klover_book">
+              <div class="klover_img"></div>
+              <span class="kindex">[인문]</span>
+              <div class="klover_score"></div>
+            </div>
+            <div class="klover_book">
+              <div class="klover_img"></div>
+              <span class="kindex">[만화]</span>
+              <div class="klover_score"></div>
+            </div>
+            <div class="klover_book">
+              <div class="klover_img"></div>
+              <span class="kindex">[과학]</span>
+              <div class="klover_score"></div>
+            </div>
+          </div>
+        </div>
         <div class="sentimental">
           <div class="title">
             <h3>감성메이커</h3>
@@ -655,34 +703,46 @@
           <div class="maker_box">
             <div class="make_img">
               <img src="img/gift1.jpg" alt="img">
+              <div class="sen_w"></div>
               <h1>날 위한 갤럭시 워치4</h1>
             </div>
-            <p><sapn>[기프트]</sapn> 삼성전자 갤럭시 위치4 40mm<br>
-              / SM-R860N</p>
+            <p>
+              <sapn>[기프트]</sapn> 삼성전자 갤럭시 위치4 40mm<br>
+              / SM-R860N
+            </p>
           </div>
           <div class="maker_box">
             <div class="make_img">
               <img src="img/gift2.jpg" alt="img">
+              <div class="sen_w"></div>
               <h1>아침을 여는 발뮤다</h1>
             </div>
-            <p><sapn>[기프트]</sapn> [공식수입원] 발뮤다 더 브루<br>
-            (K06B)</p>
+            <p>
+              <sapn>[기프트]</sapn> [공식수입원] 발뮤다 더 브루<br>
+              (K06B)
+            </p>
           </div>
           <div class="maker_box">
             <div class="make_img">
               <img src="img/gift3.jpg" alt="img">
+              <div class="sen_w"></div>
               <h1>헤드폰에 도전하다!</h1>
             </div>
-            <p><sapn>[기프트]</sapn> 소니 WF-1000XM4 노이즈캔슬<br>
-            링 무선 이어폰</p>
+            <p>
+              <sapn>[기프트]</sapn> 소니 WF-1000XM4 노이즈캔슬<br>
+              링 무선 이어폰
+            </p>
           </div>
           <div class="maker_box">
             <div class="make_img">
               <img src="img/gift4.jpg" alt="img">
+              <div class="sen_w"></div>
               <h1>살아있는 전설, 마샬</h1>
             </div>
-            <p><sapn>[기프트]</sapn> 마샬 STANMORE || 블루투스<br>
-            스피커</p>
+            <p>
+              <sapn>[기프트]</sapn> 마샬 STANMORE || 블루투스<br>
+              스피커
+            </p>
           </div>
         </div>
         <div class="notice">
@@ -826,11 +886,11 @@
       });
     });
     //open API method
-    //오늘의 책
+    //화제의 신간
     $.ajax({
       method: "GET",
       url: "https://dapi.kakao.com/v3/search/book?target=title",
-      data: { query : "여행"},
+      data: { query: "여행" },
       headers: { Authorization: "KakaoAK 252e82cfdd1ef6dc18b7a23679dbec5a" }
     })
       .done(function (msg) {
@@ -843,10 +903,18 @@
         const bookAlbum = document.querySelector(".new_book_album");
         const newBook = document.querySelectorAll(".new_book_country .newbook_box");
 
-        for(var i=0; i<newBook.length; i++){
+        for (var i = 0; i < newBook.length; i++) {
+
           $(newBook).eq(i).append("<a href='#'>" + "<img src='" + msg.documents[i].thumbnail + "'/" + "</a>");
           $(newBook).eq(i).append("<h3>" + "<a href='#'>" + "[" + msg.documents[i].authors + "]" + "</a>" + "</h3>");
-          $(newBook).eq(i).append("<h3>" + "<a href='#'>" + msg.documents[i].title + "</a>" + "</h3>");
+          $(newBook).eq(i).append("<h4>" + "<a href='#'>" + msg.documents[i].title + "</a>" + "</h3>");
+
+          var str = msg.documents[i].contents;
+          var str2 = str.substring(0, 40);
+
+          $().eq(i).append("<p class='sample_p'>" + '<a href="#">' + str2 + "···" + "</a>" + "</p>");
+          $().eq(i).append('<a href="#">' + "<img src='img/sample_cart.png'>" + "</a>");
+          $().eq(i).append('<a href="#">' + "<img src='img/sample_mag.png'>" + "</a>");  
         }
       });
     //OOO님을 위한 Picks 추천 샘플
@@ -901,12 +969,62 @@
 
           $(weekBox).eq(i).append("<p class='sample_p'>" + '<a href="#">' + str2 + "</a>" + "</p>");
         }
-      }); 
+      });
+    //klover 평점 좋은 책
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: { query: "여행" },
+      headers: { Authorization: "KakaoAK 252e82cfdd1ef6dc18b7a23679dbec5a" }
+    })
+      .done(function (msg) {
+        console.log(msg.documents[1].title);
+        //9.5에서 10까지 랜덤한 평점나오게 하기(10 미포함)
+        function rand(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+        const newRand = rand(9.5, 10);
+
+        const kloverBook = document.querySelectorAll('.klover_book');
+        const kloverImg = document.querySelectorAll('.klover_img');
+        const kloverScore = document.querySelectorAll('.klover_score');
+
+        for (var i = 0; i < kloverScore.length; i++) {
+          $(kloverImg).eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+          $(kloverScore).eq(i).append("<h3>" + '<a href="#">' + msg.documents[i].title + "</a>" + "</h3>");
+          $(kloverScore).eq(i).append("<h4>" + '<a href="#">' + msg.documents[i].authors + "</a>" + "</h4>");
+          $(kloverBook).eq(i).append("<div class='kscore'>" + '<a href="#">' + "<img src='img/klover.png' alt='klover'>" + "</a>" + "</div>");
+          $(kloverBook).eq(i).append("<div class='kscore'>" + "<span>" + newRand.toFixed(1) + "</span>" + "</div>");
+        }
+      });
     //jquery
     //최상단 banner close event
     $(function () {
       $(".banner_close").click(function () {
         $(".banner").slideUp();
+      });
+    });
+    //OOO님을 위한 Picks 추천 샘플 mouseenter evenet
+    $(function(){
+      $(".sample_box").mouseenter(function(){
+        $(this).children(".sample_img").stop().fadeIn();
+      }).mouseleave(function(){
+        $(this).children(".sample_img").stop().fadeOut();
+      });
+    });
+    //라이징스타 button hover
+    $(function(){
+      $(".center_slide").mouseenter(function(){
+        $(this).children(".center_left").stop().fadeIn();
+      }).mouseleave(function(){
+        $(this).children(".center_left").stop().fadeOut();
+      });
+    });
+    $(function(){
+      $(".center_slide").mouseenter(function(){
+        $(this).children(".center_right").stop().fadeIn();
+      }).mouseleave(function(){
+        $(this).children(".center_right").stop().fadeOut();
       });
     });
     //javascript
@@ -936,6 +1054,30 @@
     });
     //화제의 신간
     const newBook = document.querySelectorAll(".new_book_country .newbook_box");
+    //라이징스타 지금 뜨는 HOT템
+    const centerSlides = document.querySelector(".center_slide ul");
+    const centerPrev = document.querySelector(".center_left");
+    const centerNext = document.querySelector(".center_right");
+
+    (function addEvent() {
+      centerPrev.addEventListener('click', translateslides.bind(this, 1));
+      centerNext.addEventListener('click', translateslides.bind(this, -1));
+    })();
+
+    function translateslides(direction) {
+      const selectedBtn = (direction === 1) ? 'prev' : 'next';
+      centerSlides.style.transitionDuration = '800ms';
+      centerSlides.style.transform = `translateX(${direction * (103 / 6.2)}%)`;
+      centerSlides.ontransitionend = () => reorganizeEl(selectedBtn);
+    }
+
+    function reorganizeEl(selectedBtn) {
+      centerSlides.removeAttribute('style');
+      (selectedBtn === 'prev') ? centerSlides.insertBefore(centerSlides.lastElementChild, centerSlides.firstElementChild) : centerSlides.appendChild(centerSlides.firstElementChild);
+    }
+    //라이징스타 dot
+    let centerIndex = 1;
+
     //stroy k hover event
     const kBox = document.querySelectorAll(".k_box");
     const kImg = document.querySelectorAll(".k_box img");

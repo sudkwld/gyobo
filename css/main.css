@@ -80,7 +80,7 @@ main {
 #sub_slider .book_cast {
   position: absolute;
   top: 0;
-  left: 12px;
+  left: 11px;
   width: 206px;
   padding-top: 20px;
   background-color: #fff;
@@ -116,7 +116,7 @@ main {
   height: 50px;
   position: absolute;
   top: 160px;
-  left: 12px;
+  left: 11px;
   background-color: #fff;
 }
 
@@ -187,11 +187,6 @@ main {
 
 .sub_ad:last-child {
   border-right: none;
-}
-
-.sub_ad img {
-  width: 100%;
-  height: 100%;
 }
 
 #slider_ad_btm {
@@ -394,6 +389,8 @@ section {
   width: 950px;
   margin: 0 auto;
   margin-top: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .new_book .title {
@@ -404,9 +401,9 @@ section {
 }
 
 .new_book_country {
-  width: 950px;
+  width: 3000px;
   display: flex;
-  justify-content: space-between;
+  gap: 0 22px;
 }
 
 .newbook_box {
@@ -416,6 +413,7 @@ section {
   flex-flow: column wrap;
   align-items: center;
   border: 1px solid #dadada;
+  position: relative;
 }
 
 .newbook_box:hover {
@@ -448,6 +446,59 @@ section {
   font-size: 12px;
 }
 
+.newbook_hide {
+  width: 121px;
+  position: absolute;
+  top: 35px;
+  left: 49px;
+  background-color: #5e6b9e;
+  opacity: 0.9;
+  text-align: center;
+  display: none;
+}
+
+.newbook_hide p {
+  margin-left: 10px;
+  width: 100px;
+  padding-bottom: 22px;
+}
+
+.newbook_hide p a {
+  color: #fff;
+}
+
+.newbook_hide p a:hover {
+  text-decoration: underline;
+}
+
+.hide_img img{
+  margin-top: 8px;
+  margin-left: 2px;
+  padding: 0;
+  border: 1px solid #fff;
+  width: 25px;
+  height: 25px;
+}
+
+.hide_img img:hover {
+  transition: all 0.5s ease;
+  background-color: #273050;
+}
+
+.book_prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+}
+
+.book_next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+}
+
 .sample {
   width: 950px;
   margin: 0 auto;
@@ -459,6 +510,7 @@ section {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .sample .title li span {
@@ -466,11 +518,17 @@ section {
   color: #2AC557;
   display: flex;
   align-items: center;
+  font-weight: 900;
 }
 
 .sample .title li a {
   font-size: 16px;
   font-weight: 900;
+}
+
+.sample .title li a:hover {
+  color: #3c5fdf;
+  text-decoration: underline;
 }
 
 .sample .title img[alt="question"] {
@@ -491,7 +549,6 @@ section {
 }
 
 .sensitive_box ul {
-  width: 169px;
   padding-top: 10px;
   padding-left: 30px;
   text-align: left;
@@ -529,10 +586,15 @@ section {
 .sample_box h3 {
   margin: -1px 0;
   padding: 0 20px;
+  text-align: center;
 }
 
 .sample_box h3:first-of-type a{
   color: #3e74ab;
+}
+
+.sample_box h3:last-of-type a:hover {
+  text-decoration: underline;
 }
 
 .sample_img {
@@ -566,7 +628,7 @@ section {
 }
 
 .sample_img img {
-  margin-top: 6px;
+  margin-top: 8px;
   margin-left: 2px;
   padding: 0;
   border: 1px solid #fff;
@@ -663,6 +725,8 @@ section {
 .only_icon_box li img {
   width: 108px;
   height: 87px;
+  filter: grayscale(100%);
+  opacity: 0.55;
 }
 
 .only_icon_box .only_prev {
@@ -784,6 +848,13 @@ section {
   background-size: cover;
 }
 
+.this_book_slide {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
 .this_bookbox_on, .this_bookbox {
   width: 221px;
   height: 325px;
@@ -815,12 +886,23 @@ section {
 }
 
 .this_read li {
-  padding: 5px 0;
+  margin: 5px 0 5px 15px;
   border-bottom: 1px solid #dadada;
+  list-style: inside;
+  width: 200px;
+  padding-bottom: 4px;
+}
+
+.this_read li a {
+  font-size: 12px;
 }
 
 .this_read li:last-child {
   border-bottom: none;
+}
+
+.this_read li:hover {
+  text-decoration: underline;
 }
 
 .this_tag {
@@ -830,7 +912,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
 }
 
 .this_tag h4 {
@@ -843,16 +924,30 @@ section {
 }
 
 .this_tag ul {
-  margin-right: 5px;
+  padding-right: 10px;
 }
 
 .this_tag li {
   float: left;
   color: #fff;
   margin-left: 8px;
-  padding: 5px;
-  border-radius: 15px;
-  border: 1px solid #fff;
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.this_book_slide .this_prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+} 
+
+.this_book_slide .this_next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
 }
 
 .story_k {
@@ -879,6 +974,10 @@ section {
 .title_k img {
   width: 8px;
   height: 10px;
+}
+
+.story_cast img{
+  margin-left: 5px;
 }
 
 .k_box {
@@ -979,25 +1078,107 @@ section {
   flex-flow: row wrap;
   justify-content: space-evenly;
   background-color: #fff;
+  padding: 30px;
 }
 
-.best_box {
+.best_corner:not(:nth-of-type(2)) {
+  display: none;
+}
+
+.best_box, 
+.best_for, 
+.best_box_ebook, 
+.best_box_audio, 
+.best_box_sam,
+.best_box_gift {
   width: 128px;
   height: 240px;
   position: relative;
-  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.best_box .label {
-  position: absolute;
-  top: 0;
-  left: 0;
+.best_corner span {
+  font-weight: 700;
+  color: #888;
+  margin-right: 70px;
+  margin-top: -10px;
+  margin-bottom: 8px;
 }
+
+.best_corner .label_sticker {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: inherit;
+  border: none;
+}
+
+.label_number {
+  position: absolute;
+  top: -2px;
+  left: 6px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  margin: 0;
+}
+
+.best_corner h3 {
+  margin: 0;
+  width: 120px;
+  line-height: 15px;
+}
+
+.best_corner h3 a {
+  font-size: 12px;
+}
+
+.best_corner h3 a:hover {
+  text-decoration: underline;
+}
+
+.best_cover_img img, 
+.best_for_img img, 
+.best_ebook_img img, 
+.best_audio_img img, 
+.best_sam_img img,
+.best_gift_img img{
+  width: 90px;
+  border: 1px solid #fff;
+}
+
+.best_cover_img img:hover {
+  border: 1px solid #888;
+  transition: all 0.5s ease;
+}
+
+.best_for_img img:hover {
+  border: 1px solid #888;
+  transition: all 0.5s ease;
+}
+
+.best_ebook_img img:hover {
+  border: 1px solid #888;
+  transition: all 0.5s ease;
+}
+
+.best_audio_img img:hover {
+  border: 1px solid #888;
+  transition: all 0.5s ease;
+}
+
+.best_sam_img img:hover {
+  border: 1px solid #888;
+  transition: all 0.5s ease;
+} 
 
 .best_ad {
   width: 180px;
   height: 490px;
-  background-color: #2AC557;
+  background-color: #fff;
 }
 
 .best_ad ul {
@@ -1011,20 +1192,13 @@ section {
   padding: 20px 0px;
   background-color: #dfdfdf;
   border-bottom: 1px solid #5e6b9e;
-}
-
-.best_ad li:first-child {
-  background-color: #5e6b9e;
-}
-
-.best_ad li:first-child a {
-  color: #fff;
-}
-
-.best_ad li a {
-  color: #666;
   font-size: 12px;
   font-weight: 900; 
+}
+
+.best_ad li:first-of-type {
+  background-color: #5e6b9e;
+  color: #fff;
 }
 
 .best_youtuber {
@@ -1033,19 +1207,34 @@ section {
   flex-flow: column wrap;
   align-items: center;
   font-size: 12px;
+  background-color: #fff;
 }
 
 .youtuber_img {
-  text-align: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   position: relative;
+  width: 180px;
+  height: 140px;
+}
+
+.best_youtuber p {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  text-align: center;
+}
+
+.best_youtuber span {
+  width: 150px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .youtuber_img .heo {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
   width: 128px;
   height: 128px;
   z-index: 1;
@@ -1054,12 +1243,37 @@ section {
 .youtuber_img .play {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
   z-index: 2;
 }
 
+.best_youtuber:nth-of-type(2) {
+  display: none;
+}
+
+.best_youtuber .recommend_img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recommend_img:first-of-type {
+  padding-top: 40px;
+}
+
+.recommend_img img {
+  width: 72px;
+  height: 107px;
+}
+
 .best_stick {
-  margin: 100px 0 30px;
+  margin: 30px 0 30px;
+}
+
+.best_youtuber:nth-of-type(2) .best_stick {
+  margin: 41px 0 30px 70px;
 }
 
 .book_week {
@@ -1068,7 +1282,7 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
 .book_week .title {
@@ -1084,20 +1298,41 @@ section {
   height: 330px;
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   text-align: center;
 }
 
 .week_img {
   width: 150px;
-  height: 190px;
-  padding: 20px 0;
+  height: 210px;
+  padding: 15px;
   background-color: #f9f9f9;
 }
 
+.week_img img {
+  border: 1px solid #dadada;
+}
+
 .week_box h3 {
-  width: 150px;
+  width: 130px;
   height: 50px;
-  margin: -10px 0 0 0;
+  margin-top: 10px;
+  line-height: 15px;
+}
+
+.week_box h3 a {
+  font-size: 12px;
+}
+
+.week_box p {
+  margin-top: -11px;
+  font-size: 11px;
+}
+
+.week_bg {
+  width: 950px;
+  height: 15px;
+  margin: 30px 0 50px;
 }
 
 .klover {
@@ -1127,14 +1362,14 @@ section {
 .klover_find {
   width: 210px;
   height: 410px;
-  position: relative;
   border: 5px solid #e3e3e4;
   background-color: #f9f9f9;
-  text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-flow: column wrap;
+  flex-direction: column;
+}
+
+.klover_find .find_index {
+  background-color: purple;
 }
 
 .klover_find h3 {
@@ -1142,20 +1377,20 @@ section {
   font-weight: 900;
   color: #000;
   margin: 0;
+  background-color: red;
 }
 
 .klover_find h4 {
   font-size: 12px;
   font-weight: 500;
   margin: 0;
-  padding-bottom: 30px;
+  background-color: blue;
 }
 
 .klover_find h5 {
-  font-size: 12px;
-  width: 145px;
-  margin: 0;
-  padding: 20px 0 10px;
+  font-size: 13px;
+  width: 125px;
+  background-color: yellow;
 }
 
 .klover_find img {
@@ -1165,19 +1400,13 @@ section {
 }
 
 .klover_find img:hover {
-  border: 1px solid #000;
+  border: 1px solid #888;
   transition: all 0.5s ease;
 }
 
 .kscore {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  background-color: pink;
 }
 
 .kscore img {
@@ -1193,22 +1422,21 @@ section {
 
 .klover_chu {
   width: 702px;
-  height: 420px;
+  height: 411px;
   border: 1px solid #dadada;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .klover_book {
   width: 170px;
-  height: 409px;
+  height: 400px;
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  justify-content: center;
   position: relative;
+  padding-top: 60px;
 }
 
 .klover_img {
@@ -1221,14 +1449,15 @@ section {
 }
 
 .klover_img img:hover {
-  border: 1px solid #000;
+  border: 1px solid #888;
   transition: all 0.5s ease;
 }
 
 .klover_score {
   width: 170px;
-  height: 50px;
+  height: 140px;
   text-align: center;
+  background-color: #2AC557;
 }
 
 .klover_score h3, .klover_score h4 {
@@ -1244,13 +1473,17 @@ section {
   font-weight: 500;
 }
 
+.klover .week_bg {
+  margin-top: 60px;
+}
+
 .sentimental {
   width: 950px;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 50px 0;
+  padding-bottom: 80px;
   text-align: center;
 }
 
